@@ -1,0 +1,10 @@
+<div class="backdrop" [ngClass]="{'active': openModal}">
+    <div class="modal-card">
+        <div class="header"><img (click)="pageService.openCLoseModal()" src="/assets/img/close.png"></div>
+        <div class="body">
+            <app-detail-assets *ngIf="nameModal=='assets'" [dataSend]="dataModal"></app-detail-assets>
+            <app-detail-configuration *ngIf="nameModal=='configuration'" [dataSend]="dataModal"></app-detail-configuration>
+            <app-detail-sparepart *ngIf="nameModal=='sparepart'" [dataSend]="dataModal"></app-detail-sparepart>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+$height:300px;
+app-sidebar{
+    position: fixed;
+    top: 0;
+}
+.mainmenu{
+    position: relative;
+    width: calc(100% - $height);
+    margin-left: $height;
+    .layout{
+        // padding: 15px;
+    }
+}

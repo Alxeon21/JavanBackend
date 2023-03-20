@@ -1,0 +1,47 @@
+.layout_login{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #EBF6FF;
+    margin: 0px;
+    .card_login{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        .layout_input{
+            input{
+                width: 263px;
+                height: 33px;
+                margin-bottom: 9px;
+                margin-left: 15px;
+                margin-right:15px;
+            }
+            .alert{
+                div{
+                    text-align: right;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+        .layout_submit{
+            height : 39px;
+            padding-left:15px;
+            padding-right:15px;
+            .btn-submit{
+                width : 78.3px;
+                height : 39px;
+                border-radius:5px;
+                float:right;
+                margin: 0px;
+                border:none;
+                cursor: pointer;
+            }
+        }
+    }
+}

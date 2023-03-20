@@ -1,0 +1,36 @@
+<div class="layout-table">
+<div class="table-title" *ngIf="tableTitle!=''">{{tableTitle}}</div>
+<div class="head-form">
+    <div *ngIf="tableSearch" class="search-form">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <button type="button">Search</button>
+    </div>
+    <div class="menu-form">
+        <button *ngIf="tableDownload" type="button">Download <img src="/assets/img/download.png"></button>
+        <button *ngIf="tableSort" type="button">Sort <img src="/assets/img/sort.png"></button>
+        <button *ngIf="addButton!=''" type="button" class="bg-success">{{addButton}}</button>
+    </div>
+</div>
+
+<table class="mytable">
+    <thead>
+        <tr>
+            <th *ngFor="let item of tableHeader">
+                {{item.name}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of tableData">
+            <td *ngFor="let row of tableHeader">
+                <div *ngIf="row.type=='text' " class="{{item.class}}" [ngClass]="{'clickable': row.click}" (click)="onClickedItem(row.click,item)" >{{item[row.key]}}</div>
+                <div *ngIf="row.type=='text-custom'" class="{{row.class}} {{row.set[item[row.key]]}}">{{item[row.key]}} </div>
+                <div *ngIf="row.type=='percentage' " class="{{item.class}} percentage" [ngClass]="{'clickable': row.click}" (click)="onClickedItem(row.click,item)" >
+                    <div class="bar-percen {{row.set[item[row.key]]}}" [ngStyle]="{'width': item[row.subkey]+'%'}" >
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

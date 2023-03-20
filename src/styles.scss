@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    display: block;
+    margin: 0px;
+    .btn-primary{
+        background: #91C0E4 !important;
+        color: #fff;
+    }
+    .btn-primary:hover{
+        background: #578db6 !important;
+        color: rgb(232, 234, 246);
+    }
+    .btn-primary:active {
+        transform: scale(0.98);
+        background: #226293 !important;
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    }
+    .btn-primary:disabled,
+    .btn-primary[disabled]{
+        border: 1px solid #999999;
+        color: #666666;
+        opacity: 0.7;
+        cursor: not-allowed !important;
+        pointer-events: all !important;
+    }
+
+    .alert{
+        font-size: 10px;
+        min-height: 15px;
+        margin-bottom: 10px;
+    }
+
+    .alert-danger{
+        color: red;
+    }
+    .alert-warning{
+        color: orange;
+    }
+
+    .bg-danger{
+        background-color: #E30E0E !important;
+        color: #fff;
+    }
+    .bg-warning{
+        background-color: #E4AE25 !important;
+        color: #fff
+    }
+    .bg-success{
+        background-color: #37B744 !important;
+        color: #fff
+    }
+
+    .btn-status{
+        width: 89px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 4px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .text-right{
+        text-align: right;         
+    }
+}

@@ -1,0 +1,8 @@
+<app-modal [openModal]="pageService.openModal" [nameModal]="pageService.nameModal" [dataModal]="pageService.dataModal"></app-modal>
+<app-sidebar *ngIf="pageService.inapp"></app-sidebar>
+<div [ngClass]="{'mainmenu':pageService.inapp}">
+    <app-header *ngIf="pageService.inapp"></app-header>
+    <div class="layout">
+        <router-outlet></router-outlet>
+    </div>            
+</div>

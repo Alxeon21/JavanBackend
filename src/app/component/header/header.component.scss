@@ -1,0 +1,26 @@
+$height:174px;
+
+.header{
+    height: $height;
+    width:100%;
+    position: relative;
+    .breadcum{
+        margin-top: 43px;
+        margin-left: 34px;
+        a{
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+    }
+    .line{
+        position: absolute;
+        height: 18px;
+        width:100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #FFFCFC;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

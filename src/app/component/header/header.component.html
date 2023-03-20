@@ -1,0 +1,9 @@
+<div class="header">
+    <div class="breadcum">
+        <span *ngIf="pageService.activePage==='Home'"> Home </span>
+        <a *ngIf="pageService.activePage!=='Home'" (click)="goTo('/home')"> Home </a>
+        <span *ngIf="pageService.activePage!=='Home'" (click)="goTo('/'+pageService.activePageDetail.path)"> / {{pageService.activePage}} </span>
+
+    </div>
+    <div class="line"></div>
+</div>
